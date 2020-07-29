@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="d-flex flex-column justify-content-between">
                                             <div class="d-flex flex-column">
-                                                <span>Seridor Rede</span>
+                                                <span>Servidor Rede</span>
                                                 <small class="grey">Cada <strong class="black">aprovada</strong> desconta <strong>1</strong> crédito.</small>
                                             </div>
                                         </div>
@@ -80,7 +80,7 @@
                         <div id="reprovadas"></div>
                     </div>
                 </div>
-                
+
                 <div class="d-flex flex-row align-items-center justify-content-between">
                     <button type="button" class="btn btn-default btn-fechar-cartao" data-dismiss="modal">Fechar</button>
                     <button type="button" onclick="enviarLista()" class="btn btn-info btn-enviar-cartao">Iniciar</button>
