@@ -63,7 +63,7 @@
                                     <small class="mb-1">Versão: 2.45</small>
                                     <button type="submit" class="btn btn-info">Entrar</button>
                                     <small class="mt-1">2018 - 2020 © Todos os Direitos Reservados</small>
-                                    <button data-target="#modal-cadastro" data-toggle="modal" type="button" class="btn btn-secondary mt-1">Cadastre-se</button>
+                                    
                                 </div>
                             </form>
                         </div>
