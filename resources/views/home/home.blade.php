@@ -59,8 +59,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="card my-2">
-                    <div class="card-body">
+                    <div class="card-body mb-1">
                         <div class="d-flex flex-row align-items-center justify-content-between">
                             <span>Aprovadas</span>
                             <button class="btn btn-sm btn-secondary btn-copy">Copiar</button>
@@ -69,6 +70,17 @@
                         <div id="aprovadas"></div>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <span>Reprovadas</span>
+                        </div>
+                        <hr>
+                        <div id="reprovadas"></div>
+                    </div>
+                </div>
+                
                 <div class="d-flex flex-row align-items-center justify-content-between">
                     <button type="button" class="btn btn-default btn-fechar-cartao" data-dismiss="modal">Fechar</button>
                     <button type="button" onclick="enviarLista()" class="btn btn-info btn-enviar-cartao">Iniciar</button>

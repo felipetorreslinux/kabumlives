@@ -65,7 +65,9 @@ function enviarLista(){
                     success: function(rep) {
                         $("#modal-checker #aprovadas").append(rep.message);
                     },
-                    error:function(){console.clear()},
+                    error:function(e){
+                        $("#modal-checker #reprovadas").append(value+" | Reprovada <br>");
+                    },
                     complete:function(){
                         removelinha()
                         testadas++;

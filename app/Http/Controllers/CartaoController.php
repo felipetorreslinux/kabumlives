@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CartaoController extends Controller{
 
@@ -177,7 +178,7 @@ class CartaoController extends Controller{
                 ], 200);
               }else{
                 return response()->json([
-                    "message"=>"$cc | $mes | $ano | $cvv | ".$dados['nome']." | Reprovada"
+                    "message"=>"$cc | $mes | $ano | $cvv | Reprovada"
                 ], 400);
               }
 
@@ -282,7 +283,7 @@ class CartaoController extends Controller{
             
             }else{
                 return response()->json([
-                    "message"=>"$cc | $mes | $ano | $cvv | ".$dados['nome']." | Reprovada"
+                    "message"=>"$cc | $mes | $ano | $cvv | Reprovada"
                 ], 400);
             }
 
