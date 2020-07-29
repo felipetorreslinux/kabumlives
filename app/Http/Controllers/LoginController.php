@@ -15,7 +15,6 @@ class LoginController extends Controller
 
     public function login(Request $request){
         
-
         $login = $request->input('login');
         $senha = $request->input('senha');
 

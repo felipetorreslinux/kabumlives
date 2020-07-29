@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class CartaoController extends Controller{
 
     public function cartao(Request $request){
+        if(!session('logado')){return redirect('login');}
         
         $lista = $request->input('lista');
         $lista = trim($lista);
@@ -25,7 +26,14 @@ class CartaoController extends Controller{
 
         $debito = ["R$ 1,40", "R$ 4,23", "R$ 5,19", "R$ 4,21", "R$ 3,24", "R$ 3,10", "R$ 1,10"];
 
-        
+        $saldo = DB::table('saldo_db')->where('user', intval(session('id')))->first();
+
+        if($saldo->saldo <= 0){
+            ob_flush();
+            return response()->json([
+                "message"=>"Você não possui saldo. Recarregue..."
+            ], 400);
+        }
 
         if($infocard['bandeira'] == "DISCOVER"){
 
