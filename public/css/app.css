@@ -1,0 +1,16 @@
+@import url("bootstrap-extended.css");
+@import url("colors.css");
+@import url("components.css");
+
+
+table thead tr th{
+    font-size:13px;
+}
+table tbody tr td{
+    font-size:13px;
+}   
+.dropdown-toggle::after{
+    display:none;
+    margin:0;
+    padding:0;
+}
