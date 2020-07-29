@@ -17,14 +17,12 @@
     <small>Versão: 2.45</small>
 </div>
 <div class="d-flex flex-row align-items-center justify-content-center py-2">
-    <button class="btn btn-info px-3 btn-credito">Crédito</button>
+    <button class="btn btn-info px-3 btn-credito">Crédito e Geradas</button>
     <div class="mx-1"></div>
-    <button class="btn btn-green px-3 btn-geradas">Geradas</button>
-    <div class="mx-1"></div>
-    <button class="btn btn-danger px-3">Logins</button>
+    <button class="btn btn-danger px-3" disabled>Logins</button>
 </div>
 
-<!-- Modal Crérdito -->
+<!-- Modal Crédito -->
 <div class="modal fade" id="modal-checker" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
